@@ -1,0 +1,60 @@
+Microinstrucao: 00110101000001001010100
+B-Bus: SP | C-Bus Habilitados: MAR, SP
+REGS ANTES: {'H': 0, 'OPC': 0, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 0, 'PC': 0, 'MDR': 0, 'MAR': 0, 'MBR': 0}
+REGS DEPOIS: {'H': 0, 'OPC': 0, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 1, 'PC': 0, 'MDR': 0, 'MAR': 1, 'MBR': 0}
+MEMORIA: [0, 0, 1, 2, 4, 8, 16, 32]
+------------------------------------------------------------
+Microinstrucao: 00110011000000000110000
+B-Bus: FETCH_SPECIAL | C-Bus Habilitados: MBR, H
+REGS ANTES: {'H': 0, 'OPC': 0, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 1, 'PC': 0, 'MDR': 0, 'MAR': 1, 'MBR': 0}
+REGS DEPOIS: {'H': 51, 'OPC': 0, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 1, 'PC': 0, 'MDR': 0, 'MAR': 1, 'MBR': 51}
+MEMORIA: [0, 0, 1, 2, 4, 8, 16, 32]
+------------------------------------------------------------
+Microinstrucao: 00111100010000001001000
+B-Bus: OPC | C-Bus Habilitados: MAR, OPC
+REGS ANTES: {'H': 51, 'OPC': 0, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 1, 'PC': 0, 'MDR': 0, 'MAR': 1, 'MBR': 51}
+REGS DEPOIS: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 1, 'PC': 0, 'MDR': 0, 'MAR': 51, 'MBR': 51}
+MEMORIA: [0, 0, 1, 2, 4, 8, 16, 32]
+------------------------------------------------------------
+Microinstrucao: 00110101000001001010100
+B-Bus: SP | C-Bus Habilitados: MAR, SP
+REGS ANTES: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 1, 'PC': 0, 'MDR': 0, 'MAR': 51, 'MBR': 51}
+REGS DEPOIS: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 2, 'PC': 0, 'MDR': 1, 'MAR': 2, 'MBR': 51}
+MEMORIA: [0, 0, 1, 2, 4, 8, 16, 32]
+------------------------------------------------------------
+Microinstrucao: 00111100000000010100111
+B-Bus: TOS | C-Bus Habilitados: MDR
+REGS ANTES: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 2, 'PC': 0, 'MDR': 1, 'MAR': 2, 'MBR': 51}
+REGS DEPOIS: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 2, 'PC': 0, 'MDR': 51, 'MAR': 2, 'MBR': 51}
+MEMORIA: [0, 0, 51, 2, 4, 8, 16, 32]
+------------------------------------------------------------
+Microinstrucao: 00111100000000001000101
+B-Bus: LV | C-Bus Habilitados: MAR
+REGS ANTES: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 2, 'PC': 0, 'MDR': 51, 'MAR': 2, 'MBR': 51}
+REGS DEPOIS: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 2, 'PC': 0, 'MDR': 51, 'MAR': 51, 'MBR': 51}
+MEMORIA: [0, 0, 51, 2, 4, 8, 16, 32]
+------------------------------------------------------------
+Microinstrucao: 00111100000000001001000
+B-Bus: OPC | C-Bus Habilitados: MAR
+REGS ANTES: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 2, 'PC': 0, 'MDR': 51, 'MAR': 51, 'MBR': 51}
+REGS DEPOIS: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 2, 'PC': 0, 'MDR': 51, 'MAR': 102, 'MBR': 51}
+MEMORIA: [0, 0, 51, 2, 4, 8, 16, 32]
+------------------------------------------------------------
+Microinstrucao: 00111000100000000010000
+B-Bus: MDR | C-Bus Habilitados: H
+REGS ANTES: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 2, 'PC': 0, 'MDR': 51, 'MAR': 102, 'MBR': 51}
+REGS DEPOIS: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 2, 'PC': 0, 'MDR': 51, 'MAR': 102, 'MBR': 51}
+MEMORIA: [0, 0, 51, 2, 4, 8, 16, 32]
+------------------------------------------------------------
+Microinstrucao: 00110101000001001010100
+B-Bus: SP | C-Bus Habilitados: MAR, SP
+REGS ANTES: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 2, 'PC': 0, 'MDR': 51, 'MAR': 102, 'MBR': 51}
+REGS DEPOIS: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 3, 'PC': 0, 'MDR': 2, 'MAR': 3, 'MBR': 51}
+MEMORIA: [0, 0, 51, 2, 4, 8, 16, 32]
+------------------------------------------------------------
+Microinstrucao: 00111100000000010000000
+B-Bus: MDR | C-Bus Habilitados: MDR
+REGS ANTES: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 3, 'PC': 0, 'MDR': 2, 'MAR': 3, 'MBR': 51}
+REGS DEPOIS: {'H': 51, 'OPC': 51, 'TOS': 0, 'CPP': 0, 'LV': 0, 'SP': 3, 'PC': 0, 'MDR': 53, 'MAR': 3, 'MBR': 51}
+MEMORIA: [0, 0, 51, 2, 4, 8, 16, 32]
+------------------------------------------------------------
